@@ -75,3 +75,8 @@ label{
         margin-bottom: 100px;
     }
 }
+@media  screen and (max-width:500px) {
+    label{
+        font-size: 10px;
+    }
+}
