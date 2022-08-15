@@ -63,7 +63,7 @@ label{
         font-size: medium;
     }
     .detailsviewer{
-        width: 60%;
+        width: 80%;
     }
     #temperature{
         font-size: 35px;
@@ -74,9 +74,12 @@ label{
     #images{
         margin-bottom: 100px;
     }
+    #cityname{
+        margin-top: 50px;
+    }
 }
-@media  screen and (max-width:500px) {
+@media  screen and (max-width:600px) {
     label{
-        font-size: 10px;
+        font-size: 15px;
     }
 }
