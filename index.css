@@ -59,8 +59,11 @@ label{
     .body{
         background-repeat: repeat;
     }
+    label{
+        font-size: medium;
+    }
     .detailsviewer{
-        width: 50%;
+        width: 60%;
     }
     #temperature{
         font-size: 35px;
