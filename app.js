@@ -2,12 +2,14 @@ const onSubmit=()=>{
     let divimg=document.getElementById("images")
     const temperaturedesc=document.getElementById("temperature")
     const weatherdescription=document.getElementById("weather")
+    const errordisplay=document.getElementById("error")
+    errordisplay.innerText=""
     temperaturedesc.innerText=""
     weatherdescription.innerText=""
     divimg.innerText=""
     console.log("clicked")
     const city=document.getElementById("cityname").value
-    const apiid="60b9ddbffa8ad3ca675c8182d59fefd0";
+    const apiid=config.api_id;
     const unitschosen=document.getElementById("units")
     var value=unitschosen.options[unitschosen.selectedIndex].text
     var units;
@@ -60,7 +62,6 @@ const onSubmit=()=>{
              }
            })
            .catch(function(error) {
-             let errordisplay=document.getElementById("error")
              errordisplay.innerText="Incorrect City Name Please check the city name"
            });
        }
