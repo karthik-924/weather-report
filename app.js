@@ -9,7 +9,7 @@ const onSubmit=()=>{
     divimg.innerText=""
     console.log("clicked")
     const city=document.getElementById("cityname").value
-    const apiid=config.api_id;
+  const apiid = "60b9ddbffa8ad3ca675c8182d59fefd0";
     const unitschosen=document.getElementById("units")
     var value=unitschosen.options[unitschosen.selectedIndex].text
     var units;
@@ -52,7 +52,8 @@ const onSubmit=()=>{
              }
              const temperature=weatherdata.main.temp;
              console.log(temperature)
-             temperaturedesc.innerText="The temperature in "+weatherdata.name+" is "+temperature+measurement
+             document.getElementById("addClass").className = "alert alert-success";
+             temperaturedesc.innerText = "The temperature in " + weatherdata.name + " is " + temperature + measurement
              weatherdescription.innerText="The weather is currently "+weatherdesc
              for(let i=0;i<weatherdata.weather.length;i++){
              var img=document.createElement("img")
