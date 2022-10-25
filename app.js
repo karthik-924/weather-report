@@ -9,7 +9,7 @@ const onSubmit=()=>{
     divimg.innerText=""
     console.log("clicked")
     const city=document.getElementById("cityname").value
-  const apiid = "60b9ddbffa8ad3ca675c8182d59fefd0";
+    const apiid="60b9ddbffa8ad3ca675c8182d59fefd0";
     const unitschosen=document.getElementById("units")
     var value=unitschosen.options[unitschosen.selectedIndex].text
     var units;
