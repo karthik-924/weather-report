@@ -63,7 +63,8 @@ const onSubmit=()=>{
              }
            })
            .catch(function(error) {
-             errordisplay.innerText="Incorrect City Name Please check the city name"
+             errordisplay.innerText = "Incorrect City Name Please check the city name"
+             errordisplay.className="alert alert-danger"
            });
        }
           const url = "https://api.openweathermap.org/data/2.5/weather?q="+city+"&appid="+apiid+"&units="+units;
